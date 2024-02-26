@@ -579,7 +579,7 @@
                       data-animation="fadeInUp"
                       data-delay=".9s"
                     >
-                      <a href="/produk.html" target="_blank"
+                      <a href="#" target="_blank"
                         >Pesan Sekarang</a
                       >
                     </div>
@@ -2354,38 +2354,6 @@
     <script src="assets/js/imagesloaded.pkgd.min.js"></script>
     <script src="assets/js/jquery.nice-select.min.js"></script>
     <script src="assets/js/main.js"></script>
-    <script>
-    function ubahLink() {
-    const semuaLink = document.querySelectorAll('a[href="#"]');
-
-    semuaLink.forEach((link) => {
-        link.href = 'https://wa.me/6281345290765';
-    });
-    }
-    ubahLink();
-    </script>
-    <script>
-    document.querySelectorAll('.clickable-image').forEach(function(img) {
-    img.addEventListener('click', function() {
-        var fullScreenImage = document.createElement('img');
-        fullScreenImage.src = this.src;
-        fullScreenImage.style.display = 'block';
-        fullScreenImage.style.width = '100%';
-        fullScreenImage.style.height = '100%';
-        fullScreenImage.style.position = 'fixed';
-        fullScreenImage.style.zIndex = '10000';
-        fullScreenImage.style.top = '0';
-        fullScreenImage.style.left = '0';
-        fullScreenImage.style.objectFit = 'contain';
-        fullScreenImage.style.backgroundColor = 'rgba(0,0,0,0.7)';
-        
-        fullScreenImage.addEventListener('click', function() {
-            document.body.removeChild(fullScreenImage);
-        });
-        
-        document.body.appendChild(fullScreenImage);
-    });
-    });
-    </script>
+    <script src="assets/js/myfunction.js"></script>
   </body>
 </html>
